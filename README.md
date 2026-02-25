@@ -1,100 +1,49 @@
-● Zillow Clone Scraper & Google Form Automation
-
+**Zillow Clone Scraper & Google Form Automation
+**
 This project scrapes rental property data from a Zillow clone website and automatically submits the extracted information into a Google Form using Selenium.
 
-It combines:
+• It combines :
+  - requests for fetching webpage data
+  -BeautifulSoup for HTML parsing
+  -Selenium for browser automation
 
-requests for fetching webpage data
-
-BeautifulSoup for HTML parsing
-
-Selenium for browser automation
-
-● What This Project Does
-
+**What This Project Does
+**
 Scrapes:
+-Property address
+-Rental price
+-Property link
+-Cleans and formats the extracted data
+-Automatically fills and submits a Google Form for each listing
 
-Property address
+**Tech Stack**
+-Python 3
+-BeautifulSoup
+-Requests
+-Selenium
+-Chrome WebDriver
 
-Rental price
+**How It Works**
+• Send HTTP request to the Zillow clone site.
+• Parse the HTML using BeautifulSoup.
+• Extract required data fields.
+• Clean and format the scraped data.
+• Use Selenium to:
+• Open the Google Form
+• Fill inputs dynamically
+• Submit
+• Repeat for all listings
 
-Property link
+**Notes**
+-This project is built for educational purposes.
+-Web scraping real-world websites may violate their terms of service.
+-Always review a website’s policies before scraping.
 
-Cleans and formats the extracted data
+**What I Learned**
+• Handling dynamic elements using Selenium
+• Using explicit waits to avoid ElementNotInteractableException
+• Cleaning and structuring scraped data
+• Automating repetitive browser tasks
 
-Automatically fills and submits a Google Form for each listing
-
-● Tech Stack
-
-Python 3
-
-BeautifulSoup
-
-Requests
-
-Selenium
-
-Chrome WebDriver
-
-● How It Works
-
-Send HTTP request to the Zillow clone site.
-
-Parse the HTML using BeautifulSoup.
-
-Extract required data fields.
-
-Clean and format the scraped data.
-
-Use Selenium to:
-
-Open the Google Form
-
-Fill inputs dynamically
-
-Submit
-
-Repeat for all listings
-
-● How to Run
-
-Clone the repository
-
-git clone https://github.com/your-username/your-repo-name.git
-
-Install dependencies
-
-pip install -r requirements.txt
-
-Make sure ChromeDriver is installed and matches your Chrome version.
-
-Update:
-
-FORM_URL
-
-RENTING_SITE_URL (if needed)
-
-Run:
-
-python main.py
-● Notes
-
-This project is built for educational purposes.
-
-Web scraping real-world websites may violate their terms of service.
-
-Always review a website’s policies before scraping.
-
-● What I Learned
-
-Handling dynamic elements using Selenium
-
-Using explicit waits to avoid ElementNotInteractableException
-
-Cleaning and structuring scraped data
-
-Automating repetitive browser tasks
-
----● License ●---
-
+---● **License** ●---
 This project is licensed under the MIT License.

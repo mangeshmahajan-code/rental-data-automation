@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as ec
 import time
 
 RENTING_SITE_URL = "https://appbrewery.github.io/Zillow-Clone/"
-FORM_URL ="https://forms.gle/sBkF5Sd5sZE7pQP59"
+FORM_URL ="https://forms.gle/rVrzSiqAdyNgqqdS7"
 
 class DataEntery :
 
